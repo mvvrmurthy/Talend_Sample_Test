@@ -1,4 +1,0 @@
-eclipse.preferences.version=1
-template_bat_script=%~d0\ncd %~dp0\njava -Doracle.jdbc.timezoneAsRegion\=false -Dtalend.component.manager.m2.repository\="%cd%/../lib" ${talend.job.jvmargs} -cp ${talend.job.bat.classpath} ${talend.job.class} ${talend.job.bat.addition} %*
-template_ps_script=$fileDir \= Split-Path -Parent $MyInvocation.MyCommand.Path\r\ncd $fileDir\r\njava '-Doracle.jdbc.timezoneAsRegion\=false -Dtalend.component.manager.m2.repository\=%cd%/../lib' ${talend.job.jvmargs.ps1} -cp ${talend.job.ps1.classpath} ${talend.job.class} ${talend.job.bat.addition} $args
-template_sh_script=\#\!/bin/sh\ncd `dirname $0`\nROOT_PATH\=`pwd`\njava -Doracle.jdbc.timezoneAsRegion\=false -Dtalend.component.manager.m2.repository\=$ROOT_PATH/../lib ${talend.job.jvmargs} -cp ${talend.job.sh.classpath} ${talend.job.class} ${talend.job.sh.addition} "$@"
